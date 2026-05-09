@@ -399,7 +399,7 @@ def make_env(
             env = gym.make(env_id)
 
         if fixed_layout:
-            env = FixedLayoutWrapper(env, layout_seed=layout_seed)
+            env = FixedResetSeed(env, seed=layout_seed)
 
         # Apply termination wrapper before episode statistics
         if termination_mode == "cumulative":
@@ -412,8 +412,6 @@ def make_env(
             raise ValueError(f"Unknown termination_mode: {termination_mode}")
 
         env = RecordCostEpisodeStatistics(env)
-        if fixed_reset_seed:
-            env = FixedResetSeed(env, seed=seed)
         if capture_video:
             if idx == 0:
                 env = safety_gymnasium.wrappers.RecordVideo(env, f"videos/{run_name}")

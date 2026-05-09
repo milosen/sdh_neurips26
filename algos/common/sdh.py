@@ -55,6 +55,29 @@ class SDH:
         next_continuation = self.gamma*alpha
 
         return attenuated_rewards, next_continuation
+
+    def compute_multistep_rewards_and_continuations(self, rewards, costs, gammas):
+        """N-step version: rewards, costs, gammas are arrays of length n_step.
+
+        Returns the collapsed n-step return and the continuation factor used
+        for bootstrapping, exactly as the single-step version but accumulated
+        over n steps with compound alpha discounting.
+        """
+        alpha = self.alpha(costs)  # (n_step,)
+
+        attenuated_rewards = alpha * (rewards + self.alive_reward)
+
+        # prefix products: [1, alpha[0], alpha[0]*alpha[1], ...]
+        cumprod_alpha = np.cumprod(alpha)
+        n_step_alpha_prefix = np.concatenate([[1.0], cumprod_alpha[:-1]])
+
+        # effective discount for each step: gamma^i * prod(alpha[:i])
+        n_step_continuations = gammas * n_step_alpha_prefix
+
+        n_step_return = (attenuated_rewards * n_step_continuations).sum()
+        next_continuation = self.gamma * gammas[-1] * cumprod_alpha[-1]
+
+        return n_step_return, next_continuation
     
     def update(self, p_surv: float, step: int):
         if self.dual_updates:

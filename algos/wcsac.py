@@ -2,10 +2,14 @@
 # WCSAC: Worst-Case Soft Actor-Critic with CVaR constraint, implemented in the CleanRL style of sac_pid.py
 import csv
 import os
+import pathlib
 import random
+import sys
 import time
 from dataclasses import dataclass
 from typing import NamedTuple, Optional
+
+sys.path.insert(0, str(pathlib.Path(__file__).parent.parent))
 
 from safety_gymnasium import wrappers
 import gymnasium as gym
@@ -18,8 +22,8 @@ import torch.optim as optim
 import tyro
 from scipy.stats import norm
 
-from buffers import CostReplayBuffer, ReplayBuffer, ReplayBufferSamples
-from utils import SummaryWriter, make_env
+from algos.common.buffers import CostReplayBuffer, ReplayBuffer, ReplayBufferSamples
+from algos.common.utils import SummaryWriter, make_env
 
 
 @dataclass

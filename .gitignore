@@ -1,4 +1,13 @@
+*.png
+*.pdf
+*.zip
 .venv
 __pycache__
-runs
-videos
+runs/
+videos/
+data/
+containter/
+.DS_Store
+*.png
+*.pdf
+mpcdf/slurm_logs/

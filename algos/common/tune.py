@@ -57,8 +57,9 @@ def objective_from_logs(run_dir: str, cost_limit: float) -> float:
 
 def run_trial(algo: str, env_id: str, seed: int, trial_num: int, extra_args: list[str]) -> str:
     exp_name = f"tune_{trial_num:04d}"
+    script = {"sac": "algos/as_sac.py", "mpo": "algos/vt_mpo.py"}[algo]
     cmd = [
-        sys.executable, f"{algo}.py",
+        sys.executable, script,
         "--env-id", env_id,
         "--exp-name", exp_name,
         "--seed", str(seed),
