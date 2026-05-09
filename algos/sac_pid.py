@@ -20,7 +20,7 @@ import torch.optim as optim
 import tyro
 
 from algos.common.buffers import CostReplayBuffer
-from utils import make_env, SummaryWriter
+from algos.common.utils import make_env, SummaryWriter
 
 
 @dataclass

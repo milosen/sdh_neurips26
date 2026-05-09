@@ -18,7 +18,7 @@ from gymnasium import spaces
 sys.path.insert(0, str(pathlib.Path(__file__).parent.parent))
 from algos.common.buffers import ReplayBuffer
 from safety_gymnasium.vector.async_vector_env import SafetyAsyncVectorEnv
-from utils import SummaryWriter, make_env
+from algos.common.utils import SummaryWriter, make_env
 
 # MPO with TD(n) as critic loss
 
