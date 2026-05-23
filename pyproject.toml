@@ -5,7 +5,7 @@ description = "Constrained Off-Policy RL algorithms (AS-SAC, VT-MPO, WCSAC)"
 requires-python = ">=3.10,<3.11"
 dependencies = [
     "torch>=2.0.0",
-    "safety-gymnasium>=1.0.0",
+    "safety-gymnasium>=0.4.0",
     "scipy>=1.10.0",
     "matplotlib>=3.7.0",
     "tensorboard>=2.13.0",
@@ -13,7 +13,12 @@ dependencies = [
     "moviepy>=1.0.3",
     "optuna>=3.0.0",
     "tueplots>=0.2.4",
+    "einops>=0.8.2",
+    "cmasher>=1.9.2",
 ]
+
+[project.optional-dependencies]
+offline = ["dsrl>=0.1.0"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["."]

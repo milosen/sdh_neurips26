@@ -9,6 +9,8 @@ from tueplots import bundles
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.parent))
 from algos.common.violation_depth_profiler import ViolationDepthProfiler
+import algos.common.violation_depth_profiler as _vdp_module
+sys.modules.setdefault("violation_depth_profiler", _vdp_module)
 
 plt.rcParams.update(bundles.icml2024())
 plt.rcParams["lines.dash_joinstyle"] = "round"
@@ -74,9 +76,9 @@ def plot_curves(means, intervals, ax):
 PROFILER_STEP = 499999
 profiler_dirs = {
     "SafetyAntVelocity":
-        "runs/profiler/SafetyAntVelocity-v1__sac_profiler__0__1777669630",
+        "../runs/profiler/SafetyAntVelocity-v1__sac_profiler__0__1777669630",
     "SafetyCarButton":
-        "runs/profiler/SafetyCarButton1-v0__sac_profiler__0__1777669304",
+        "../runs/profiler/SafetyCarButton1-v0__sac_profiler__0__1777669304",
 }
 profiler_colors = {
     "SafetyAntVelocity": "#5e81b5",
@@ -114,7 +116,7 @@ for ax, (env_name, run_dir), subtitle in zip(axs[2:], profiler_dirs.items(), sub
     ax.legend().remove()
 
 # y-label on the leftmost right-group panel; push it outward so it clears axs[1]
-axs[2].set_ylabel(r"$\Omega^\pi(b)$", labelpad=0)
+axs[2].set_ylabel(r"$\Omega_{\pi}(b)$", labelpad=0)
 
 plt.subplots_adjust(bottom=0.30, top=0.62, wspace=0.25, left=0.08, right=0.98,)
 

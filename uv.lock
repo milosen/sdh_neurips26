@@ -27,6 +27,20 @@ wheels = [
 ]
 
 [[package]]
+name = "bullet-safety-gym"
+version = "1.4.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "gymnasium" },
+    { name = "numpy" },
+    { name = "pybullet" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/2d/27/4b314cf78896b88efeb48cab246169af1e7eb714a36bcc8ef30e1f17a31c/bullet_safety_gym-1.4.0.tar.gz", hash = "sha256:aa703ec2fbbd509db440fcbb87bfa58acb27279bac9a833e60ce4ab830a60b68", size = 11831554, upload-time = "2023-06-14T04:59:46.921Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/11/23/b14367bef8c4192d93b58dab30dead73e959cb6a979093542e6d033127fe/bullet_safety_gym-1.4.0-py3-none-any.whl", hash = "sha256:26a1f61445bec3c9a5b8027a39e4c652ee7f279ab27fd07ca76ab23eba75c87c", size = 11904542, upload-time = "2023-06-14T04:59:41.73Z" },
+]
+
+[[package]]
 name = "certifi"
 version = "2026.4.22"
 source = { registry = "https://pypi.org/simple" }
@@ -70,6 +84,20 @@ wheels = [
 ]
 
 [[package]]
+name = "cmasher"
+version = "1.9.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorspacious" },
+    { name = "matplotlib" },
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/2f/ca/39152b506133881be74bd46cced27ec10d9bbc85db5bdfc22c8f8e4011f9/cmasher-1.9.2.tar.gz", hash = "sha256:6c90c2cec87146e3210d3e7f2321fceee38ac7d87c136cd0de25160a14f57ff5", size = 520860, upload-time = "2024-11-19T11:17:02.084Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/91/d2/6fcb93a60777fef7662d84ba60846d2dee9b6b70b4a62472515110f79cee/cmasher-1.9.2-py3-none-any.whl", hash = "sha256:2fe45fde06051050dda5c023a527ba9066ca21f161c793f22839a6ebe6e4bbbb", size = 506496, upload-time = "2024-11-19T11:16:58.549Z" },
+]
+
+[[package]]
 name = "colorama"
 version = "0.4.6"
 source = { registry = "https://pypi.org/simple" }
@@ -88,6 +116,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/a2/61/f083b5ac52e505dfc1c624eafbf8c7589a0d7f32daa398d2e7590efa5fda/colorlog-6.10.1.tar.gz", hash = "sha256:eb4ae5cb65fe7fec7773c2306061a8e63e02efc2c72eba9d27b0fa23c94f1321", size = 17162, upload-time = "2025-10-16T16:14:11.978Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/6d/c1/e419ef3723a074172b68aaa89c9f3de486ed4c2399e2dbd8113a4fdcaf9e/colorlog-6.10.1-py3-none-any.whl", hash = "sha256:2d7e8348291948af66122cff006c9f8da6255d224e7cf8e37d8de2df3bad8c9c", size = 11743, upload-time = "2025-10-16T16:14:10.512Z" },
+]
+
+[[package]]
+name = "colorspacious"
+version = "1.1.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/75/e4/aa41ae14c5c061205715006c8834496d86ec7500f1edda5981f0f0190cc6/colorspacious-1.1.2.tar.gz", hash = "sha256:5e9072e8cdca889dac445c35c9362a22ccf758e97b00b79ff0d5a7ba3e11b618", size = 688573, upload-time = "2018-04-08T04:27:30.83Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ab/a1/318b9aeca7b9856410ededa4f52d6f82174d1a41e64bdd70d951e532675a/colorspacious-1.1.2-py2.py3-none-any.whl", hash = "sha256:c78befa603cea5dccb332464e7dd29e96469eebf6cd5133029153d1e69e3fd6f", size = 37735, upload-time = "2018-04-08T04:27:22.143Z" },
 ]
 
 [[package]]
@@ -205,6 +245,31 @@ wheels = [
 ]
 
 [[package]]
+name = "dsrl"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "bullet-safety-gym" },
+    { name = "gym" },
+    { name = "numpy" },
+    { name = "pybullet" },
+    { name = "safety-gymnasium" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/27/5d/995bbda71be452e99f871c2ad37f3eb1cfac0098434a2c97859e2b8c19a8/dsrl-0.1.0.tar.gz", hash = "sha256:69bc8b3c6130285a0dc82a77521af7b9a47af80c62b2c47b51a0007f78e3f8c1", size = 22802, upload-time = "2023-06-14T05:08:20.519Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0b/07/78733a92f5181a50bc6cbfc0fc0ca112d3b0f57a3c1f54ec5ef5d8aac331/dsrl-0.1.0-py3-none-any.whl", hash = "sha256:1d2f4b019fb884b29a783e53eb03a765e4f080e809c9055a367beab9b875baea", size = 21887, upload-time = "2023-06-14T05:08:18.454Z" },
+]
+
+[[package]]
+name = "einops"
+version = "0.8.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/2c/77/850bef8d72ffb9219f0b1aac23fbc1bf7d038ee6ea666f331fa273031aa2/einops-0.8.2.tar.gz", hash = "sha256:609da665570e5e265e27283aab09e7f279ade90c4f01bcfca111f3d3e13f2827", size = 56261, upload-time = "2026-01-26T04:13:17.638Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/2a/09/f8d8f8f31e4483c10a906437b4ce31bdf3d6d417b73fe33f1a8b59e34228/einops-0.8.2-py3-none-any.whl", hash = "sha256:54058201ac7087911181bfec4af6091bb59380360f069276601256a76af08193", size = 65638, upload-time = "2026-01-26T04:13:18.546Z" },
+]
+
+[[package]]
 name = "farama-notifications"
 version = "0.0.4"
 source = { registry = "https://pypi.org/simple" }
@@ -319,6 +384,26 @@ wheels = [
 ]
 
 [[package]]
+name = "gym"
+version = "0.26.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "cloudpickle" },
+    { name = "gym-notices" },
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ab/b1/eb05a423eb801ab7d0715d6a3b28d92589e30b437052553df19ca2087240/gym-0.26.2.tar.gz", hash = "sha256:e0d882f4b54f0c65f203104c24ab8a38b039f1289986803c7d02cdbe214fbcc4", size = 721689, upload-time = "2022-10-04T23:57:43.247Z" }
+
+[[package]]
+name = "gym-notices"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a2/4d/035922b950b224ee4b65a9a4550a22eac8985a3f0e1ef42546d9047e7a72/gym_notices-0.1.0.tar.gz", hash = "sha256:9f9477ef68a8c15e42625d4fa53631237e3e6ae947f325b5c149c081499adc1b", size = 3084, upload-time = "2025-07-27T10:12:41.534Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/41/55/55d157aa8693090954fc9639bf27218240517c3bc7afa6e97412da6ebfd9/gym_notices-0.1.0-py3-none-any.whl", hash = "sha256:a943af4446cb619d04fd1e470b9272b4473e08a06d1c7cc9005755a4a0b8c905", size = 3349, upload-time = "2025-07-27T10:12:40.039Z" },
+]
+
+[[package]]
 name = "gymnasium"
 version = "0.28.1"
 source = { registry = "https://pypi.org/simple" }
@@ -332,23 +417,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/58/6a/c304954dc009648a21db245a8f56f63c8da8a025d446dd0fd67319726003/gymnasium-0.28.1.tar.gz", hash = "sha256:4c2c745808792c8f45c6e88ad0a5504774394e0c126f6e3db555e720d3da6f24", size = 796462, upload-time = "2023-03-25T12:02:00.613Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/60/82/3762ef4555791a729ae554e13c011efe5e8347d7eba9ea5ed245a8d1b234/gymnasium-0.28.1-py3-none-any.whl", hash = "sha256:7bc9a5bce1022f997d1dbc152fc91d1ac977bad9cc7794cdc25437010867cabf", size = 925534, upload-time = "2023-03-25T12:01:58.35Z" },
-]
-
-[[package]]
-name = "gymnasium-robotics"
-version = "1.2.2"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "gymnasium" },
-    { name = "imageio" },
-    { name = "jinja2" },
-    { name = "mujoco" },
-    { name = "numpy" },
-    { name = "pettingzoo" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/f8/e9/a21b416e9d288d68ef84c753439765fe82148daac473cb4d8c303f665954/gymnasium-robotics-1.2.2.tar.gz", hash = "sha256:464110d3a0065198011ba28d6b4545f3ebb1fa2dc3804d0d0f2b260f2ea59d0c", size = 26063159, upload-time = "2023-05-17T13:51:22.49Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/65/fb/bf0d6778797776b88dc344843a4c6f4447ef5891249143655dc78ef618c8/gymnasium_robotics-1.2.2-py3-none-any.whl", hash = "sha256:1a02e2ff5c842b5cf1ecdfe0cc41775ca87bc06595ba9ffcd879d6187df1392b", size = 26134064, upload-time = "2023-05-17T13:51:16.298Z" },
 ]
 
 [[package]]
@@ -531,7 +599,7 @@ wheels = [
 
 [[package]]
 name = "mujoco"
-version = "2.3.3"
+version = "2.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "absl-py" },
@@ -539,13 +607,13 @@ dependencies = [
     { name = "numpy" },
     { name = "pyopengl" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/7c/03/7ce6078745085febd22fc4586a63016a71125031b97883d456ce1d64e5ed/mujoco-2.3.3.zip", hash = "sha256:8bd074d3c5d9d25416cf2a5b82b337a7431a6e20edbd0da7fbc05ee5255c1aaa", size = 633278, upload-time = "2023-03-20T18:23:59.89Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b9/c6/4b0b0a927e8b150210f32ccd5637203176e3970b93f3e60ad2b5675a45f6/mujoco-2.3.0.tar.gz", hash = "sha256:f0c8b66bdbe07e9479d922ad4168ea1c6cd34793c1263bb9abffd86c2dfbe242", size = 144402, upload-time = "2022-10-18T10:41:30.535Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/21/2c/f59255b4fbd159a374c4077721bc5baac11afcc15b8a28f8c7658ac89df5/mujoco-2.3.3-2-cp310-cp310-macosx_10_12_x86_64.whl", hash = "sha256:7b95a0b7ae8bb9e36d04ba475a950025791c43087845235bb92bd2dd1787589a", size = 4308671, upload-time = "2023-03-20T18:09:30.955Z" },
-    { url = "https://files.pythonhosted.org/packages/31/20/afc0ef5d5b9d96f3853458329f39518e638f41c0439c94ae2b97a9ab9f3a/mujoco-2.3.3-2-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:8b9f8e9e6d47fe60f96dc54be780a66a38d5ec2ff94d091ad54c6f87468b4b6a", size = 4177357, upload-time = "2023-03-20T18:09:34.016Z" },
-    { url = "https://files.pythonhosted.org/packages/6d/da/27b0ef31aa23f64c21e7129ddf378c2548be45d87433f89e2bea4cafc811/mujoco-2.3.3-2-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:a9cbd3b60ac30f0b6661de050ca3e1de906b9c28ed9d084bdd708c141953247d", size = 3995762, upload-time = "2023-03-20T18:09:36.335Z" },
-    { url = "https://files.pythonhosted.org/packages/6d/27/90cc9b4f88c5b797417e1fbeacb7590cd85f7e464a8ab79f60c885708e39/mujoco-2.3.3-2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:9c7fd195bca86102788d86dbc2773c59c1f0ee3933b35eb0f6a86f0f2aeb5065", size = 4270849, upload-time = "2023-03-20T18:09:38.593Z" },
-    { url = "https://files.pythonhosted.org/packages/cd/b3/e9119ebbbe9ea830e6c8ab7eafc0de7c82b38d6b71d2b2e38ba20e43a1b7/mujoco-2.3.3-2-cp310-cp310-win_amd64.whl", hash = "sha256:f3595e992770eff3f842cb80f7eb2b7b1b3e78995b6ecc247f98036da17ef74f", size = 3190540, upload-time = "2023-03-20T18:09:41.101Z" },
+    { url = "https://files.pythonhosted.org/packages/cb/c1/276fbacca42af070ab0c9dfeca8231a56ef4779f0c6f35425e6cdc6dd33a/mujoco-2.3.0-cp310-cp310-macosx_10_12_x86_64.whl", hash = "sha256:5b0d86454e13de40d856a01f7c32bacece1ce498aa68bd497c1a115ad245f6dd", size = 3623235, upload-time = "2022-10-18T10:40:34.728Z" },
+    { url = "https://files.pythonhosted.org/packages/21/f8/cc9c08bba444adec1d60eab5093121e6782a97635846221e4056b3e3eda6/mujoco-2.3.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:19b6728edb1701260cbdbf8e8d560e984489c857d360d5f3df423623065ac83a", size = 3515723, upload-time = "2022-10-18T10:40:38.091Z" },
+    { url = "https://files.pythonhosted.org/packages/aa/47/2cae76a7465d36b740d131015ce3be2578712af605e297857be8567c86cb/mujoco-2.3.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:0116872fbad885d5bf618d5c30dc6c014581f43b58c8ddfdf19f613b650d5f58", size = 3574213, upload-time = "2022-10-18T10:40:41.312Z" },
+    { url = "https://files.pythonhosted.org/packages/46/d9/a3168692f970b9a957c8d179cf691a7e5667bb62f484d26fe3c5fd955133/mujoco-2.3.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:0553456b817f08f3eb0844f948e46610387f9aa13bedb4784c457aa80caa5598", size = 3943962, upload-time = "2022-10-18T10:40:44.349Z" },
+    { url = "https://files.pythonhosted.org/packages/83/f2/6d76624fc0cf99631ecedf9219c631d60d5d0521e193fae912ec89c7a026/mujoco-2.3.0-cp310-cp310-win_amd64.whl", hash = "sha256:03214ae22687c8a2dafa924574c0e504fbb5d158760bf5904d19b1e0fb50a7e0", size = 3012129, upload-time = "2022-10-18T10:40:47.328Z" },
 ]
 
 [[package]]
@@ -748,19 +816,6 @@ wheels = [
 ]
 
 [[package]]
-name = "pettingzoo"
-version = "1.24.3"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "gymnasium" },
-    { name = "numpy" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/1c/9f/0158a60109ba43e343e16b257ffa5690607b0bccbcdd0feb7b4f07903d85/pettingzoo-1.24.3.tar.gz", hash = "sha256:91f9094f18e06fb74b98f4099cd22e8ae4396125e51719d50b30c9f1c7ab07e6", size = 720284, upload-time = "2024-01-18T17:38:28.007Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/c8/4e/eae7b6ecb801573fbec0c76b0fd1dd95bfd1a7fd8770bdd20242044e91f0/pettingzoo-1.24.3-py3-none-any.whl", hash = "sha256:23ed90517d2e8a7098bdaf5e31234b3a7f7b73ca578d70d1ca7b9d0cb0e37982", size = 847753, upload-time = "2024-01-18T17:38:25.555Z" },
-]
-
-[[package]]
 name = "pillow"
 version = "12.2.0"
 source = { registry = "https://pypi.org/simple" }
@@ -804,6 +859,15 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/85/29/64de04a0ac142fb685fd09999bc3d337943fb386f3a0ec57f92fd8203f97/protobuf-7.34.1-cp310-abi3-win32.whl", hash = "sha256:34b84ce27680df7cca9f231043ada0daa55d0c44a2ddfaa58ec1d0d89d8bf60a", size = 426628, upload-time = "2026-03-20T17:34:42.536Z" },
     { url = "https://files.pythonhosted.org/packages/4d/87/cb5e585192a22b8bd457df5a2c16a75ea0db9674c3a0a39fc9347d84e075/protobuf-7.34.1-cp310-abi3-win_amd64.whl", hash = "sha256:e97b55646e6ce5cbb0954a8c28cd39a5869b59090dfaa7df4598a7fba869468c", size = 437901, upload-time = "2026-03-20T17:34:44.112Z" },
     { url = "https://files.pythonhosted.org/packages/88/95/608f665226bca68b736b79e457fded9a2a38c4f4379a4a7614303d9db3bc/protobuf-7.34.1-py3-none-any.whl", hash = "sha256:bb3812cd53aefea2b028ef42bd780f5b96407247f20c6ef7c679807e9d188f11", size = 170715, upload-time = "2026-03-20T17:34:45.384Z" },
+]
+
+[[package]]
+name = "pybullet"
+version = "3.2.7"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/de/95/b9a98cd4ed948d4f25a7d0b13cb0c1f87e58dc6d113be9e18940641eb25f/pybullet-3.2.7.tar.gz", hash = "sha256:042879db8d101ac7590dee475fc6aded508b85fe1273fdbbfde1d88bd200e14f", size = 80508379, upload-time = "2025-01-30T00:34:00.527Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/2b/e0/45278c039635529fec27814e6ad9c5a87030161f5ce714e017dd70f562f9/pybullet-3.2.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:814e6b0c035a634b5c46f69065effb085cc451886dda4140576be2f34b461940", size = 103193654, upload-time = "2025-01-30T00:18:52.555Z" },
 ]
 
 [[package]]
@@ -887,20 +951,19 @@ wheels = [
 
 [[package]]
 name = "safety-gymnasium"
-version = "1.0.0"
+version = "0.4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "gymnasium" },
-    { name = "gymnasium-robotics" },
     { name = "imageio" },
     { name = "mujoco" },
     { name = "pygame" },
     { name = "pyyaml" },
     { name = "xmltodict" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/5e/d9/c89c942c1fe3d199d5592913fe89562ecbf6fb49df8305c38050739c1f4b/safety-gymnasium-1.0.0.tar.gz", hash = "sha256:0d539571b4b9498b1e9332f42f262cb5801a90157c36f1549cbad73eca226c46", size = 27161076, upload-time = "2023-07-21T07:14:35.328Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/88/d9/792324ecd9216946f031c26f5a40ff8db48f01010a08d494473789106104/safety-gymnasium-0.4.0.tar.gz", hash = "sha256:fec978ce83e59389ea92f21846e73c15a0772cddfd401e40fa3a4392b9cb9a02", size = 26615129, upload-time = "2023-05-10T14:04:33.345Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b1/79/de1f26e1cdeb96032ef55e4f69ca12d0c3afa6fa8331b3c75f86bf6785da/safety_gymnasium-1.0.0-py3-none-any.whl", hash = "sha256:1efb19de9316bde563df887660e6be0da98e3962058fe60a0f8db5bffb9e0fe0", size = 27273042, upload-time = "2023-07-21T07:13:42.484Z" },
+    { url = "https://files.pythonhosted.org/packages/95/49/be31008c8736cc9a70a6a65dc406991d32ce8f79f02bcb3c1a32f0aeb682/safety_gymnasium-0.4.0-py3-none-any.whl", hash = "sha256:7a429483f0a6cd07d3a9bfad66364aa0d528195ef3353f4853399797da8e8f1c", size = 26667729, upload-time = "2023-05-10T14:04:13.49Z" },
 ]
 
 [[package]]
@@ -928,6 +991,8 @@ name = "sdh"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "cmasher" },
+    { name = "einops" },
     { name = "matplotlib" },
     { name = "moviepy" },
     { name = "optuna" },
@@ -939,18 +1004,27 @@ dependencies = [
     { name = "tyro" },
 ]
 
+[package.optional-dependencies]
+offline = [
+    { name = "dsrl" },
+]
+
 [package.metadata]
 requires-dist = [
+    { name = "cmasher", specifier = ">=1.9.2" },
+    { name = "dsrl", marker = "extra == 'offline'", specifier = ">=0.1.0" },
+    { name = "einops", specifier = ">=0.8.2" },
     { name = "matplotlib", specifier = ">=3.7.0" },
     { name = "moviepy", specifier = ">=1.0.3" },
     { name = "optuna", specifier = ">=3.0.0" },
-    { name = "safety-gymnasium", specifier = ">=1.0.0" },
+    { name = "safety-gymnasium", specifier = ">=0.4.0" },
     { name = "scipy", specifier = ">=1.10.0" },
     { name = "tensorboard", specifier = ">=2.13.0" },
     { name = "torch", specifier = ">=2.0.0" },
     { name = "tueplots", specifier = ">=0.2.4" },
     { name = "tyro", specifier = ">=0.5.0" },
 ]
+provides-extras = ["offline"]
 
 [[package]]
 name = "setuptools"
